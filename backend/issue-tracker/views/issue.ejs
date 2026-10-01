@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>issues</title>
+</head>
+<body>
+    <div class="issues">
+       <%    for(issue of issues){   %>
+
+         <h3>id: <%= issue.id %></h3>
+        <b>title:  <%= issue.title %></b>
+        <p>description:  <%= issue.description %></p>
+        <i>status:  <%= issue.status %></i>
+        <br>
+        <hr>
+
+<% } %>
+       
+
+       
+    </div>
+</body>
+</html>
