@@ -31,7 +31,14 @@ const issues = [
 ];
 
 app.get("/", (req, res) => {
-  res.render("issue.ejs", { issues });
+  res.render("issues.ejs", { issues });
+});
+
+app.get("/issues/:id", (req, res) => {
+  let { id } = req.params;
+  let issue = issues.find((i) => i.id == id);
+
+  res.render("issue.ejs", { issue });
 });
 
 app.listen(port, () => {

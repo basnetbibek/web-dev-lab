@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>issue</title>
+    <title>issues</title>
 </head>
 <body>
-    <div class="issue">
-      
+    <div class="issues">
+       <%    for(issue of issues){   %>
+
          <h3>id: <%= issue.id %></h3>
         <b>title:  <%= issue.title %></b>
         <p>description:  <%= issue.description %></p>
@@ -15,7 +16,7 @@
         <br>
         <hr>
 
-
+<% } %>
        
 
        
